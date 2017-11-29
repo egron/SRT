@@ -35,6 +35,10 @@ $ : commands to insert in a shell
 
 #. Antenna monitors
 
+     	.. image:: s1-vista-globale.png 
+	   :align: center
+
+
 	Check that everything section is green. If a red box appears, put the cursor on 	it and look at the error message.
 
 	Contact and report the error messages to the responsible of the observation 		(observer friend?).
