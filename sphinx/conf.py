@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'SRT procedures'
-copyright = u'2018, E. Egron, M. Pilia, S. Loru'
+copyright = u'2025, E. Egron, M. Pilia, S. Loru'
 author = u'E. Egron, M. Pilia, S. Loru'
 
 # The version info for the project you're documenting, acts as replacement for
