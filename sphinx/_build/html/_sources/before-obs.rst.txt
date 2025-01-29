@@ -59,13 +59,13 @@ Check also that:
    - the **active surface** is green (:numref:`srt_activesurface`).
 .. warning:: The active surface does not work properly if a large fraction (a whole sector) becomes red. It is a problem in K-band observations (:numref:`srt_AS-fraction-red`);
 
-.. warning:: If the **calibrationtool client** is already open or if you need to open it later during your observation to perform pointing and/or focus optimization, remember, do not close it during the whole session.
+.. warning:: If the **calibrationtool client** is already open or if you need to open it later during your observation to perform pointing and/or focus optimization, remember, do not close it during the whole session. To open it, type ``$ calibrationtoolclient MANAGEMENT/CalibrationTool &`` on a shell.
 
 Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:
 
    *From your computer:*
 
-   ``$ scp  [schedulename.*] [projectID]@discos-console:./schedules/``
+   ``$ scp [schedulename.*] [projectID]@discos-console:./schedules/``
 
    *On discos-console:*
 

@@ -1,0 +1,209 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Check during the observations &mdash; SRT procedures 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            SRT procedures
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../before-obs.html">Important checks</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Continuum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Pulsar/index.html">Pulsar observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SpectralLine/index.html">Spectral lines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SpectroPol/index.html">Spectro-polarimetry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../VLBI/index.html">VLBI</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Problems/index.html">Problems during the observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../NuragheScratch/index.html">Discos from Scratch</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Figures/index.html">Figures</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SRT procedures</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Check during the observations</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Continuum/C-low/during-obs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="toctree-wrapper compound">
+</div>
+<section id="check-during-the-observations">
+<h1>Check during the observations<a class="headerlink" href="#check-during-the-observations" title="Link to this heading"></a></h1>
+<p>$ : commands to insert in a shell</p>
+<p>&gt; : commands to insert in the operatorInput panel</p>
+<ol class="arabic">
+<li><p>Data are correctly written in the directory</p>
+<blockquote>
+<div><p>On nuraghe-obs2, check that the data are written in your project section:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">cd/archive/data/[projectID]/</span></code></p>
+</div></blockquote>
+</li>
+<li><p>Quick-look of the data</p>
+<blockquote>
+<div><p>On nuraghe-obs2:</p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">idl</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">IDL&gt;</span> <span class="pre">.r</span> <span class="pre">fitslook</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">IDL&gt;</span> <span class="pre">fitslook</span></code></p>
+<p>Note that in the quick-look plots, the subscans are shown with a short delay            with respect to the real observations.</p>
+</div></blockquote>
+</li>
+<li><p>Antenna’s monitors</p>
+<blockquote>
+<div><p>Check that everything section is green. If a red box appears, put the cursor on         it and look at the error message.</p>
+<p>Contact and report the error messages to the responsible of the observation             (observer friend?).</p>
+</div></blockquote>
+</li>
+<li><p>Panels</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Scheduler : status OK, green</p></li>
+</ul>
+<p>During the tracking, &#64; is green while it is red during the slewing of the antenna.</p>
+<p>Check the update of the number of scan/subscan according to your schedule. Scans will be skipped if the target is not visible at the            moment of the observations.</p>
+<p>If you realize that the scan/subscan number is frozen or that the tracking &#64; is red while the antenna is tracking the source, stop the          on-going schedule with</p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaStop</span></code>    (in the operatorInput)</p>
+<p>then start again the schedule:</p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaStart=[projectID]/…scd,n</span></code>     (with n the number of scan)</p>
+<img alt="Continuum/C-low/srt_scheduler.png" class="align-center" src="Continuum/C-low/srt_scheduler.png" />
+<ul class="simple">
+<li><p>AntennaBoss : status OK, green.</p></li>
+</ul>
+<img alt="Continuum/C-low/srt_antennaboss.png" class="align-center" src="Continuum/C-low/srt_antennaboss.png" />
+<ul class="simple">
+<li><p>Mount : READY, READY, OK green (CHECK!!!!) while the antenna is pointing a source.</p></li>
+</ul>
+<img alt="Continuum/C-low/srt_mount.png" class="align-center" src="Continuum/C-low/srt_mount.png" />
+<ul class="simple">
+<li><p>MinorServo; tracking &#64; is green, the status ids OK and green.</p></li>
+</ul>
+<img alt="Continuum/C-low/srt_minorservo.png" class="align-center" src="Continuum/C-low/srt_minorservo.png" />
+<ul class="simple">
+<li><p>Receivers : status OK, green.</p></li>
+</ul>
+<p>If the derotator (dewar) is used, check the configuration and status (ready green).</p>
+<img alt="Continuum/C-low/srt_receivers.png" class="align-center" src="Continuum/C-low/srt_receivers.png" />
+</div></blockquote>
+</li>
+<li><p>Active surface</p>
+<blockquote>
+<div><p>Sometimes, not all of the small squares of the active surface are green. Do not worry for that. Instead, it can be problematic if a             large fraction of the active surface becomes red.</p>
+<ul class="simple">
+<li><p>Check that the state of the active surface corresponds to your choice (shaped, shaped fixed, parabolic, parabolic fixed).</p></li>
+<li><p>“Ok” should be green during the observations.</p></li>
+</ul>
+<img alt="Continuum/C-low/srt_activesurface.png" class="align-center" src="Continuum/C-low/srt_activesurface.png" />
+</div></blockquote>
+</li>
+<li><p>Log</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The log file (jlog) contains warning and error messages. Warning messages are indicated in yellow while error messages are in red.</p></li>
+<li><p>Check the possible error messages. Try to understand the origin of the problem and to solve it. In case of persistent/complex problem, contact and report the error messages and the associated UT to the responsible of the observation (observer friend?).</p></li>
+</ul>
+<img alt="Continuum/C-low/srt_jlog.png" class="align-center" src="Continuum/C-low/srt_jlog.png" />
+</div></blockquote>
+</li>
+<li><p>Calibration tool client</p>
+<blockquote>
+<div><img alt="Continuum/C-low/srt_calibrationtool.png" class="align-center" src="Continuum/C-low/srt_calibrationtool.png" />
+</div></blockquote>
+</li>
+<li><p>Weather parameters</p>
+<blockquote>
+<div><blockquote>
+<div><p>On nuraghe-obs1, activate the meteo client:</p>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">meteoClient</span></code></p>
+<p>If the wind speed exceeds 61 km/h, the antenna must be stowed.</p>
+<img alt="Continuum/C-low/srt_meteo.png" class="align-center" src="Continuum/C-low/srt_meteo.png" />
+</div></blockquote>
+</li>
+</ol>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2018, E. Egron, M. Pilia, S. Loru.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

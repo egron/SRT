@@ -39,13 +39,13 @@ On discos-console
 
 2. Park the minor servo, active surface and antenna
 
-   ``> goTo=180d,89d`` |logo| :numref:`srt_mount_ok`
+   ``> goTo=180d,89d`` |logo| :numref:`srt_mount`
 
-   ``> servoPark`` |logo| :numref:`srt_minorservo`
+   ``> servoPark`` |logo| :numref:`srt_minorservo_end`
 
-   ``> asPark`` |logo| :numref:`srt_activesurface`
+   ``> asPark`` |logo| :numref:`srt_activesurface_2`
 
-   ``> antennaPark`` |logo| :numref:`srt_mount_ok`
+   ``> antennaPark`` |logo| :numref:`srt_mount_antennareset`  |logo| :numref:`srt_ACU_stowpin`
 
 
 

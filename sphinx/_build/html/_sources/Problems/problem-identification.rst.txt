@@ -13,6 +13,26 @@ Check the presence of error messages on the different monitor panels, the
 jlog, ACS and the ACU control panel. 
 
 
+MinorServo
+=========
+
+Errors, warning and failure of the MinorServoBoss can be related to the crash of the server that manages the minor servos: MSCU.
+Check first if the server crashed and restart it if needed. Ask the project friend to complete the procedure from viewer01 (VLBI console). The instructions are on this link:
+https://srtsupervisoronduty.readthedocs.io/it/latest/sd/srt/procedures/minor_servo.html#mscu-restart.
+
+After restarting the server it is necessary to restart the containers of the minor servos on the discos-manager computer.
+
+
+Quicklook
+=========
+
+If the Quicklook stop running correctly and is frozen to a previous session, you can restart it from a terminal with the user “observer”:
+
+``$ su - discos service quicklook restart`` 
+
+Please, ask the project friend to complete the procedure with the password.
+
+
 Monitor panels
 =========
 
@@ -69,6 +89,19 @@ ACU control panel
 If one or different boxes appear in yellow (warning) or red (error), put the mouse on
 the box and read the associated message.
 
+.. ATTENTION:: **Servo DC warning**
+
+If the **wa_Servo_DC_Warn** label appears on the yellow warning box, the observations must be **immediately** interrupted. Give the following commands to stow the antenna:
+
+``> antennaPark``
+
+``> servoPark``
+
+``> asPark``
+
+Communicate the problem to the person in charge of the observations, as indicated by your project friend.
+
+
 .. ATTENTION:: **Servo system and axis errors**
 
 After the stow of the antenna, errors related to the main servo system
@@ -81,7 +114,7 @@ operatorInput console:
 
 ``> antennaTrack``
 
-Wait 10 seconds. If the errors disappear, you can proceed to the observations.
+Wait 10 seconds. If the errors disappear, you can proceed to the observations by setting first the minor servo setup ``> servoSetup[code]``, with ``[code=LLP,PPP,CCB,KKG]``.
 
 Instead, if the errors remain, give again the previous commands:
 
@@ -89,7 +122,7 @@ Instead, if the errors remain, give again the previous commands:
 
 ``> antennaTrack``
  
-Wait 10 seconds. If the errors disappear, you can proceed to the observations.
+Wait 10 seconds. If the errors disappear, you can proceed to the observations. Please, set first the minor servo setup as indicated before.
 
 If the errors persist:
 
@@ -101,7 +134,9 @@ If the errors persist:
 
 ``> antennaTrack``
 
-At this point, the problem should be resolved. Otherwise, contact the person in charge of
+At this point, the problem should be resolved. You can proceed with the observations. Please, set first the minor servo setup as indicated before.
+
+If the problem persits, please contact the person in charge of
 the observations (observer’s friend).
 
 
@@ -118,7 +153,6 @@ operatorInput console:
 
 If the error message is different or the problem still unresolved, contact the person in charge of
 the observations (observer’s friend).
-
 
 
 Wind velocity

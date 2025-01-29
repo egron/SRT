@@ -28,6 +28,44 @@ $  : commands to insert in a shell
 
 ======================
 
+The pointing and focus optimization requires the Total Power backend. Set first the parameters of the Total Power, then proceed with the pointing and focus procedures described below.
+
+
+Total Power setup
+=================
+
+    ``> chooseBackend=TotalPower`` |logo| :numref:`srt_scheduler`
+    
+    Insert the bandwidth (300, 730, 1250 or 2000 MHz) and choose the sample rate (in MHz) :
+
+    ``> setSection=0,*,[bw],*,*,[sampleRate],*`` |logo| :numref:`srt_genericBackend`
+
+    ``> setSection=1,*,[bw],*,*,[sampleRate],*``
+    
+    Put the antenna at 45 deg of elevation and attenuate the signal in order to have the counts in the range [750-1100] : 
+    
+    ``> goTo=*,45d`` |logo| :numref:`srt_mount`
+
+    ``> getTpi``
+    
+    ``> setAttenuation=[sect],[att]``    with [att] the attenuation from 0 to 15 dB.  |logo| :numref:`srt_genericBackend`
+
+
+
+Recorder selection and Calibration tool display
+==============================================
+
+The pointing and focus need the calibration tool client and the selection of the correct recorder.
+
+#. Choose the recorder :
+
+    ``> chooseRecorder=MANAGEMENT/CalibrationTool``
+
+#. Check if the calibrationtool client is open. If not, open it in a terminal to display the plots in real time :
+
+    ``$ calibrationtoolclient MANAGEMENT/CalibrationTool``  |logo| :numref:`srt_calibrationtool`
+    
+    
 
 Pointing
 ========
@@ -68,14 +106,6 @@ Pointing
      or   ``> sidereal=3c84,49.951d,41.512d,2000,neutral``
 
 
-#. Choose the recorder :
-
-    ``> chooseRecorder=MANAGEMENT/CalibrationTool``
-
-#. Open the calibrationtool client in a terminal to display the plots in real time :
-
-    ``$ calibrationtoolclient MANAGEMENT/CalibrationTool``  |logo| :numref:`srt_calibrationtool`
-
 #. Set proper parameters according to your beamsize and coordinate frame in order to perform a correct pointing measurement :
 
     ``> crossScan=HOR,0.5d,00:00:20``
@@ -87,12 +117,13 @@ Pointing
 
     * ``00:00:20`` indicates the duration of the scan (in this example: 20 seconds).
 
-Important note: in the event of not ideal weather conditions, you have to set a smaller scan length value of about 0.15d.
+   Important note: in the event of not ideal weather conditions, you have to set a smaller scan length value of about 0.15d.
+
 
 #. Look at the calibrationtool client to check the pointing offsets.
 
-    Pointing offsets must be less than 1/10 of the beamsize (i.e. about < 0.005
-    deg in C-band and < 0.00125 deg in K-band).
+    Pointing offsets are generally less than 1/10 of the beamsize (i.e. about < 0.005
+    deg in C-band and < 0.00125 deg in K-band). They can also be slighty larger than these values, in particular in K-band.
 
 
 #. If you want to reject the measured offsets :
@@ -112,7 +143,7 @@ Focus
 
     otherwise  ``> sidereal=[name],[RA],[Dec],[epoch],[sector]``
 
-    Important note: the complete list of the sources which are recorded in the     SRT database is available `on the page <https://discos.readthedocs.io/en/latest/user/srt/source/Appendix_D.html>`_
+    Important note: the complete list of the sources which are recorded in the SRT database is available `on the page <https://discos.readthedocs.io/en/latest/user/srt/source/Appendix_D.html>`_
 
     * ``RA, Dec``: Pay attention to the coordinate formats:
       - decimal degrees, using a **d** suffix, for any coordinate (e.g. 30.00d)
@@ -127,7 +158,12 @@ Focus
 
      e.g. ``> sidereal=3c84,03:19:48.16h,41:30:42.1,2000,neutral``
      or   ``> sidereal=3c84,49.951d,41.512d,2000,neutral``
-     
+  
+#. Cancel the previous focus position with:
+
+   ``> clearServoOffsets``
+   
+
 #. Set proper parameters according to your beamsize :
 
    ``> focusScan=150,00:01:00``

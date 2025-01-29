@@ -46,6 +46,12 @@ $ : commands to insert in a shell
 
     ``> setLO=[freq]`` |logo| :numref:`srt_receivers`
 
+
+#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
+
+      :ref:`pointing-focus`
+      
+
 #. Select and configure the SARDARA backend :
 
     ``> chooseBackend=BACKENDS/Sardara`` |logo| :numref:`srt_scheduler`
@@ -95,9 +101,6 @@ $ : commands to insert in a shell
 
     ``> wx``
 
-#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
-
-      :ref:`pointing-focus`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 

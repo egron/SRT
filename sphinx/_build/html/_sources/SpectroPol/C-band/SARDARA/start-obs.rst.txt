@@ -44,6 +44,10 @@ $ : commands to insert in a shell
 #. Insert the Local Oscillator value in MHz
 
     ``> setLO=[freq]`` |logo| :numref:`srt_receivers`
+    
+#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
+
+    :ref:`pointing-focus`
 
 #. Select and configure the SARDARA backend
 
@@ -95,10 +99,6 @@ $ : commands to insert in a shell
 #. Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :
 
     ``> wx``
-
-#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
-
-      :ref:`pointing-focus`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 

@@ -31,7 +31,7 @@ ACS Command Center
 
           The **ACS** monitor shows the state of the containers related to each DISCOS component.
           The state of each container can be verified in the section highlighted in blue.
-	  The blue arrow indicates the number of containers (33 when the system is ready).
+	  The blue arrow indicates the number of containers (35 when the system is ready).
 
 
 ACS Command Center

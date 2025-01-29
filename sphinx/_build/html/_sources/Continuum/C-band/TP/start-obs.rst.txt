@@ -79,7 +79,7 @@ $  : commands to insert in a shell
     ``> wx``
 
 
-#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :
+#. Follow the link below to perform the pointing and focus optimization (if not already included in your schedule). You can skip the first part since you have already set the parameters associated to the Total Power :
 
 
       :ref:`pointing-focus`

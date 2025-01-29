@@ -23,7 +23,7 @@ Restart Discos
  
    In the **Containers** panel, click on the global green triangle located below the individual triangles to open all of the containers.
 
-   On the **Deployment Info** panel, check that the 33 containers appear progressively.
+   On the **Deployment Info** panel, check that the 35 containers appear progressively.
  
  
  
@@ -43,7 +43,7 @@ Restart Discos
      - **MinorServo** (:numref:`srt_minorservo`)
      - **ACS custom logging client** (:numref:`srt_jlog`)
 
-   You can modify the disposition of the individual panels for more clarity.
+   
 
 
    From a virtual desktop, open a new terminal to start the **active surface** and write:

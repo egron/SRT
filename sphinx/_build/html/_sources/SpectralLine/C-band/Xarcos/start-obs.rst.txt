@@ -43,6 +43,11 @@ $ : commands to insert in a shell
 #. Insert the Local Oscillator value in MHz :
 
     ``> setLO=[freq]``  |logo| :numref:`srt_receivers`
+    
+    
+#. To perform the pointing and focus optimization (if they are not already included in your schedule), follow the link below: 
+
+      :ref:`pointing-focus`    
 
 #. Select and configure the XARCOS backend in C-band :
 
@@ -72,11 +77,6 @@ $ : commands to insert in a shell
 
     ``> wx``
 
-#. To perform the pointing and focus optimization (if they are not already included in your schedule), use the Total Power backend and follow the link below: 
-
-    ``> chooseBackend=BACKENDS/TotalPower``
-
-      :ref:`pointing-focus`
 
 #. Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :
 
