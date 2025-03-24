@@ -8,7 +8,7 @@
 .. toctree::
    :maxdepth: 1
 
-.. _start-CoCSa:
+.. _start-CoCHSa:
 
 Start the observations
 ======================
