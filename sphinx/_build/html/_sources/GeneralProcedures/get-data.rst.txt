@@ -12,16 +12,26 @@
 Getting your data
 ==================
 
-Your data are on discos-console.
+.. Your data are on discos-console.
+
+Your data are on discos-dev.
 
 You can download them on your computer whenever you want during the
 observations.
 
-   ``$ scp -r  [projectID]@discos-console:./data/yyyymmdd .``
+   ``$ scp -r  [projectID]@discos-dev:./data/yyyymmdd .``
 
 or, if they are acquired with SARDARA:
 
-   ``$ scp -r  [projectID]@discos-console:./sardaraData/yyyymmdd .``
+   ``$ scp -r  [projectID]@discos-dev:./sardaraData/yyyymmdd .``
+
+
+
+
+
+.. ``$ scp -r  [projectID]@discos-console:./data/yyyymmdd .``
+.. ``$ scp -r  [projectID]@discos-console:./sardaraData/yyyymmdd .``
+   
 
 .. Ask for the password.
 

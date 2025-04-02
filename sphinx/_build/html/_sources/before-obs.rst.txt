@@ -65,6 +65,19 @@ Upload your shedules (.scd, .lis, .bck and .cfg files) and check them:
 
    *From your computer:*
 
+   ``$ scp [schedulename.*] [projectID]@discos-dev:./schedules/``
+
+   *On discos-console:*
+
+   ``$ ssh -X [projectID]@discos-dev``
+
+   ``$ cd /home/[projectID]/schedules``
+
+   ``$ scheduleChecker [schedulename.scd]``
+   
+   
+..   *From your computer:*
+
    ``$ scp [schedulename.*] [projectID]@discos-console:./schedules/``
 
    *On discos-console:*

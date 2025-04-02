@@ -38,28 +38,34 @@ On discos-console
 
 
 
-2. Park the minor servo, active surface and antenna
+2. Park the minor servo, active surface and antenna using only this command:
 
-   ``> goTo=180d,89d`` |logo| :numref:`srt_mount`
+   ``> telescopePark``
+   
+   This command includes the following commands:
+
+   ``> goTo=*d,89d`` |logo| :numref:`srt_mount`
 
    ``> servoPark`` |logo| :numref:`srt_minorservo_end`
 
    ``> asPark`` |logo| :numref:`srt_activesurface_2`
+   
+   ``> antennaPark`` |logo| :numref:`srt_mount_antennareset`  
+   |logo| :numref:`srt_ACU_stowpin`
 
-   Wait until the antenna has finished the goTo command and reached the position at 180° (azimuth) and 89° (elevation).
-
-   ``> antennaPark`` |logo| :numref:`srt_mount_antennareset`  |logo| :numref:`srt_ACU_stowpin`
+..   Wait until the antenna has finished the goTo command and reached the position at 180° (azimuth) and 89° (elevation).
 
 
 
-Block the axes of the antenna
-------------------------------
 
-Look at the ACU monitor, wait until
-**Axis blocked** appears in red. It can take a few minutes after the command
-``> antennaPark`` has been given (:numref:`srt_ACU_axis_blocked`).
 
-Only at this moment, you can press on the emergency stop button
-(:numref:`srt_ACU_redbutton`).
+.. Block the axes of the antenna
+.. ------------------------------
 
-.. warning:: Don't worry if in the **Logging Display** appears the red warning with the message **CRITICAL: MountContainer EMERGENCY_STOP**, this is a engineering low-level information, please ignore it (:numref:`log_emergency_stop`).
+.. Look at the ACU monitor, wait until **Axis blocked** appears in red. It can take a few minutes after the command 
+.. ``> antennaPark`` has been given (:numref:`srt_ACU_axis_blocked`).
+
+.. Only at this moment, you can press on the emergency stop button 
+.. (:numref:`srt_ACU_redbutton`).
+
+.. .. warning:: Don't worry if in the **Logging Display** appears the red warning with the message **CRITICAL: MountContainer EMERGENCY_STOP**, this is a engineering low-level information, please ignore it (:numref:`log_emergency_stop`).
