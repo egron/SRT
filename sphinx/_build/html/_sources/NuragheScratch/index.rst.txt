@@ -13,7 +13,9 @@ Software), commanding all the devices of the telescope and allowing
 the user to perform single-dish observations.
 
 If the system has some problems that cannot be resolved with the help
-of the previous section, you probably need to restart Discos. 
+of the previous section, you probably need to restart Discos.
+Only specific people can do so. 
+
 
 **Before restarting Discos, you have to follow the procedure of shutdown
 of Discos.**
