@@ -4,11 +4,15 @@
    contain the root `toctree` directive.
 
 =========
-C-band
+SARDARA
 =========
 
 .. toctree::
    :maxdepth: 1
 
-   SARDARA <Sardara/index.rst>
-   Xarcos <Xarcos/index.rst>
+*  :ref:`start-SLClowSa`
+*  :ref:`check-obs`
+*  :ref:`get-data`
+*  :ref:`stop-session` 
+
+

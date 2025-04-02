@@ -1,0 +1,211 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Start the observations &mdash; SRT procedures 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            SRT procedures
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../before-obs.html">Important checks</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../Continuum/index.html">Continuum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Pulsar/index.html">Pulsar observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Spectral lines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../SpectroPol/index.html">Spectro-polarimetry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../VLBI/index.html">VLBI</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../Problems/index.html">Problems during the observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../NuragheScratch/index.html">Discos from Scratch</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../Figures/index.html">Figures</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">SRT procedures</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Start the observations</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/SpectralLine/C-low/SKARAB/start-obs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="toctree-wrapper compound">
+</div>
+<section id="start-the-observations">
+<span id="start-slcsa"></span><h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Link to this heading"></a></h1>
+<p>$ : commands to insert in a shell</p>
+<p>&gt; : commands to insert in the operatorInput panel</p>
+<p><img alt="logo" src="../../../_images/monocle_30.png" />: check the execution on the monitor</p>
+<hr class="docutils" />
+<ol class="arabic">
+<li><p>Insert your project number :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code> <img alt="logo" src="../../../_images/monocle_30.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
+</div></blockquote>
+</li>
+<li><p>Initial setup :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code> <img alt="logo" src="../../../_images/monocle_30.png" /> <a class="reference internal" href="../../../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span class="std std-numref">Fig.37</span></a> <img alt="logo" src="../../../_images/monocle_30.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-acu-green"><span class="std std-numref">Fig.30</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setupCCB</span></code> <img alt="logo" src="../../../_images/monocle_30.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.18</span></a></p>
+</div></blockquote>
+</li>
+<li><p>Select the active surface shape (Shaped configuration for C-band observations) :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code> <img alt="logo" src="../../../_images/monocle_30.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span class="std std-numref">Fig.4</span></a></p>
+</div></blockquote>
+</li>
+<li><p>Insert the Local Oscillator value in MHz :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code> <img alt="logo" src="../../../_images/monocle_30.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers"><span class="std std-numref">Fig.18</span></a></p>
+</div></blockquote>
+</li>
+<li><p>Follow the link below to perform the pointing and focus optimization (if not already included in your schedule) :</p>
+<blockquote>
+<div><p><a class="reference internal" href="../../../GeneralProcedures/pointing-focus.html#pointing-focus"><span class="std std-ref">Pointing and Focus optimization</span></a></p>
+</div></blockquote>
+</li>
+<li><p>Select and configure the SARDARA backend :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">chooseBackend=BACKENDS/Sardara</span></code> <img alt="logo" src="../../../_images/monocle_30.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">genericBackendTui</span> <span class="pre">BACKENDS/Sardara</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">initialize=SC00S</span></code> for full-stokes observations or
+<code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">initialize=SC00</span></code> for total intensity observations.</p>
+</div></blockquote>
+</li>
+<li><p>Set the different parameters of the backend :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],*,[bw],*,*,[sampleRate],[bin]</span></code>  <img alt="logo" src="../../../_images/monocle_30.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
+<p>with :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[sect]</span></code>: 0 in full-stokes observations and <code class="docutils literal notranslate"><span class="pre">[sect]</span></code>: 0, 1 in non full-stokes observations ;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[bw]</span></code> the bandwidth in MHz (420 or 1500) ;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[sampleRate]</span></code> in MHz (840 for 420 MHz of bw or 3000 for 1500 MHz of bw) ;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[bin]</span></code> the frequency channels (1024 or 16384).</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p>Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec) :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">integration=[n]</span></code></p>
+</div></blockquote>
+</li>
+<li><p>Put the antenna at 45 deg of elevation before checking that the signal is in the linear range of the backend:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">goTo=*,45d</span></code> <img alt="logo" src="../../../_images/monocle_30.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.15</span></a></p>
+</div></blockquote>
+</li>
+<li><p>Check that the getTpi command is working correctly before proceeding:</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">getTpi</span></code></p>
+<p>If getTpi=0,0 then there is a problem, you need to ask for help.
+If getTpi=(a few millions) then proceed.</p>
+</div></blockquote>
+</li>
+<li><p>Attenuate the signal based on the rms range [20;22] and check the value on the interface :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">getRms</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=[sect],[att]</span></code>    with [att] the attenuation from 0 to 15 dB.   <img alt="logo" src="../../../_images/monocle_30.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
+</div></blockquote>
+</li>
+<li><p>Check the tsys (typical values 30-35 K)</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">tsys</span></code> <img alt="logo" src="../../../_images/monocle_30.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
+</div></blockquote>
+</li>
+<li><p>Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">wx</span></code></p>
+</div></blockquote>
+</li>
+<li><p>Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :</p>
+<blockquote>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">startSchedule=[schedulename].scd,[N]</span></code>  <img alt="logo" src="../../../_images/monocle_30.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
+</div></blockquote>
+</li>
+</ol>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, E. Egron, M. Pilia, S. Loru.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

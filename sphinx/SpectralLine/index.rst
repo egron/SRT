@@ -11,7 +11,8 @@ Spectral lines
 .. toctree::
    :maxdepth: 1
 
-   C-band <C-band/index.rst>
+   C-low <C-low/index.rst>
+   C-high <C-high/index.rst>
    K-band <K-band/index.rst>
    L-band <L-band/index.rst>
 
