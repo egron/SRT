@@ -7,11 +7,10 @@
 SARDARA
 =========
 
- .. toctree::
+.. toctree::
    :maxdepth: 2
-
+   
 *  :ref:`start-CoCHSa`
 *  :ref:`check-obs`
 *  :ref:`get-data`
 *  :ref:`stop-session`
-

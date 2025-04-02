@@ -4,12 +4,13 @@
    contain the root `toctree` directive.
 
 =========
-C-high
+SARDARA
 =========
 
 .. toctree::
    :maxdepth: 2
-   :titlesonly:
-
-   Total Power <TP/index.rst>
-   SARDARA <SARDARA-CH/index-CH.rst>
+   
+*  :ref:`start-CoCHSa`
+*  :ref:`check-obs`
+*  :ref:`get-data`
+*  :ref:`stop-session`

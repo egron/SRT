@@ -8,7 +8,7 @@ SARDARA
 =========
 
  .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
 *  :ref:`start-CoCSa`
 *  :ref:`check-obs`

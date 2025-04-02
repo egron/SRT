@@ -8,8 +8,8 @@ C-high
 =========
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :titlesonly:
 
    Total Power <TP/index.rst>
-   SARDARA <SARDARA/index.rst>
+   SARDARA <SARDARA-CH/index-CH.rst>

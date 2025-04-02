@@ -8,7 +8,7 @@
 .. toctree::
    :maxdepth: 1
 
-.. _start-CoCHSa:
+.. .. _start-CoCHSa:
 
 Start the observations
 ======================
@@ -60,8 +60,8 @@ $ : commands to insert in a shell
 
     ``$ genericBackendTui BACKENDS/Sardara``
 
-    ``> initialize=SC00S`` for full-Stokes observations or
-    ``> initialize=SC00`` for total intensity observations.
+    ``> initialize=SCH00S`` for full-Stokes observations or
+    ``> initialize=SCH00`` for total intensity observations.
     
     Important note: both SARDARA configurations SC00S and SC00 are set to work with a default bandwidth of 1500 MHz and 1024 channels. Only in the event that you wanted to observe with different bandwidth and/or channel values you have to set the parameters of the backend (see the following item).
 

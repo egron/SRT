@@ -8,7 +8,7 @@ C-low
 =========
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :titlesonly:
 
    Total Power <TP/index.rst>

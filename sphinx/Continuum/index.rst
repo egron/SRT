@@ -9,7 +9,7 @@ Continuum
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    C-low  <C-low/index.rst>
    C-high <C-high/index.rst>
