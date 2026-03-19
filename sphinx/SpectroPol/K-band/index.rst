@@ -11,5 +11,5 @@ K-band
    :maxdepth: 1
 
    SARDARA <SARDARA/index.rst>
-
+   SKARAB <SKARAB/index.rst>
 

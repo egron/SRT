@@ -88,45 +88,45 @@
 <span id="start-coktp"></span><h1>Start the observations<a class="headerlink" href="#start-the-observations" title="Link to this heading"></a></h1>
 <p>$ : commands to insert in a shell</p>
 <p>&gt; : commands to insert in the operatorInput panel</p>
-<p><img alt="logo" src="../../../_images/monocle_5.png" />: check on the monitor</p>
+<p><img alt="logo" src="../../../_images/monocle_7.png" />: check on the monitor</p>
 <hr class="docutils" />
 <ol class="arabic">
 <li><p>Insert your project number :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code> <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code> <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
 </div></blockquote>
 </li>
 <li><p>Initial setup :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code> <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span class="std std-numref">Fig.37</span></a></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setupKKG</span></code>  <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-kkg"><span class="std std-numref">Fig.20</span></a> <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-acu-green"><span class="std std-numref">Fig.30</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code> <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Err-fig/Err-fig.html#srt-acu-axis-blocked"><span class="std std-numref">Fig.37</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setupKKG</span></code>  <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-kkg"><span class="std std-numref">Fig.20</span></a> <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-acu-green"><span class="std std-numref">Fig.30</span></a></p>
 </div></blockquote>
 </li>
 <li><p>Select the active surface shape (Shaped configuration for K-band observations) :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code> <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span class="std std-numref">Fig.4</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">asSetup=S</span></code> <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span class="std std-numref">Fig.4</span></a></p>
 </div></blockquote>
 </li>
 <li><p>Insert the Local Oscillator value in MHz :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code>  <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-kkg"><span class="std std-numref">Fig.20</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setLO=[freq]</span></code>  <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-kkg"><span class="std std-numref">Fig.20</span></a></p>
 </div></blockquote>
 </li>
 <li><p>Select the Total Power backend :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">chooseBackend=TotalPower</span></code> <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">chooseBackend=TotalPower</span></code> <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
 </div></blockquote>
 </li>
 <li><p>For each section [sect], insert the bandwidth ([bw]=300, 730, 1250 or 2000 MHz) and the sample rate (in MHz) :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],*,[bw],*,*,[sampleRate],*</span></code> <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend-kkg"><span class="std std-numref">Fig.14</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setSection=[sect],*,[bw],*,*,[sampleRate],*</span></code> <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend-kkg"><span class="std std-numref">Fig.14</span></a></p>
 <p>Reminder : in K-band there are 7 feeds, so 14 sections with
 <code class="docutils literal notranslate"><span class="pre">[sect]</span></code> = 0, 1 , 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13.</p>
 </div></blockquote>
 </li>
 <li><p>If you want to use the multi-feed derotator to prevent field rotation during long acquisition, select the derotator configuration :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">derotatorSetConfiguration=[config]</span></code>   with <code class="docutils literal notranslate"><span class="pre">[config]</span></code> = BSC, CUSTOM or FIXED. <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-kkg"><span class="std std-numref">Fig.20</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">derotatorSetConfiguration=[config]</span></code>   with <code class="docutils literal notranslate"><span class="pre">[config]</span></code> = BSC, CUSTOM or FIXED. <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-kkg"><span class="std std-numref">Fig.20</span></a></p>
 <blockquote>
 <div><ul class="simple">
 <li><p>BSC is for Best Coverage Space (automatic rotation of the
@@ -143,20 +143,20 @@ dewar angle in degrees.</p></li>
 </ul>
 </div></blockquote>
 <p>To read back the position of the dewar :</p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">derotatorGetPosition</span></code>  <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-kkg"><span class="std std-numref">Fig.20</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">derotatorGetPosition</span></code>  <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-receivers-kkg"><span class="std std-numref">Fig.20</span></a></p>
 </div></blockquote>
 </li>
 <li><p>Put the antenna at 45 deg of elevation and attenuate the signal for the 14 sections [sect] in order to obtain values between 750 and 1100 counts (linear range of the backend) :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">goTo=*,45d</span></code>   <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.15</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">goTo=*,45d</span></code>   <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.15</span></a></p>
 <p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">getTpi</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=[sect],[att]</span></code>  with [att] between 0 and 15 dB <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend-kkg"><span class="std std-numref">Fig.14</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=[sect],[att]</span></code>  with [att] between 0 and 15 dB <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend-kkg"><span class="std std-numref">Fig.14</span></a></p>
 <p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">getTpi</span></code></p>
 </div></blockquote>
 </li>
 <li><p>Check the tsys (typical values up to 100 K) :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">tsys</span></code> <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend-kkg"><span class="std std-numref">Fig.14</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">tsys</span></code> <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-genericbackend-kkg"><span class="std std-numref">Fig.14</span></a></p>
 </div></blockquote>
 </li>
 <li><p>Report the ground temperature, relative humidity, atmospheric pressure, and wind speed :</p>
@@ -171,12 +171,12 @@ dewar angle in degrees.</p></li>
 </li>
 <li><p>If the pointing and focus operations are included in your schedule, open the calibrationtool client in a terminal to display the pointing and focus plots in real time (if not already open) :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">calibrationtoolclient</span> <span class="pre">MANAGEMENT/CalibrationTool</span></code>  <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-calibrationtool"><span class="std std-numref">Fig.27</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">calibrationtoolclient</span> <span class="pre">MANAGEMENT/CalibrationTool</span></code>  <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-calibrationtool"><span class="std std-numref">Fig.27</span></a></p>
 </div></blockquote>
 </li>
 <li><p>Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">startSchedule=[schedulename].scd,[N]</span></code> <img alt="logo" src="../../../_images/monocle_5.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">startSchedule=[schedulename].scd,[N]</span></code> <img alt="logo" src="../../../_images/monocle_7.png" /> <a class="reference internal" href="../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
 </div></blockquote>
 </li>
 </ol>

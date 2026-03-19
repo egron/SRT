@@ -88,20 +88,20 @@
 <span id="pointing-focus"></span><h1>Pointing and Focus optimization<a class="headerlink" href="#pointing-and-focus-optimization" title="Link to this heading"></a></h1>
 <p>$  : commands to insert in a shell</p>
 <p>&gt;  : commands to insert in the operatorInput panel</p>
-<p><img alt="logo" src="../_images/monocle_8.png" />: check the execution on the monitor</p>
+<p><img alt="logo" src="../_images/monocle_10.png" />: check the execution on the monitor</p>
 <hr class="docutils" />
 <p>The pointing and focus optimization requires the Total Power backend. Set first the parameters of the Total Power, then proceed with the pointing and focus procedures described below.</p>
 <section id="total-power-setup">
 <h2>Total Power setup<a class="headerlink" href="#total-power-setup" title="Link to this heading"></a></h2>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">chooseBackend=TotalPower</span></code> <img alt="logo" src="../_images/monocle_8.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">chooseBackend=TotalPower</span></code> <img alt="logo" src="../_images/monocle_10.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
 <p>Insert the bandwidth (300, 730, 1250 or 2000 MHz) and choose the sample rate (in MHz) :</p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setSection=0,*,[bw],*,*,[sampleRate],*</span></code> <img alt="logo" src="../_images/monocle_8.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setSection=0,*,[bw],*,*,[sampleRate],*</span></code> <img alt="logo" src="../_images/monocle_10.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
 <p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setSection=1,*,[bw],*,*,[sampleRate],*</span></code></p>
 <p>Put the antenna at 45 deg of elevation and attenuate the signal in order to have the counts in the range [750-1100] :</p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">goTo=*,45d</span></code> <img alt="logo" src="../_images/monocle_8.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.15</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">goTo=*,45d</span></code> <img alt="logo" src="../_images/monocle_10.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-mount"><span class="std std-numref">Fig.15</span></a></p>
 <p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">getTpi</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=[sect],[att]</span></code>    with [att] the attenuation from 0 to 15 dB.  <img alt="logo" src="../_images/monocle_8.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=[sect],[att]</span></code>    with [att] the attenuation from 0 to 15 dB.  <img alt="logo" src="../_images/monocle_10.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
 </div></blockquote>
 </section>
 <section id="recorder-selection-and-calibration-tool-display">
@@ -115,7 +115,7 @@
 </li>
 <li><p>Check if the calibrationtool client is open. If not, open it in a terminal to display the plots in real time :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">calibrationtoolclient</span> <span class="pre">MANAGEMENT/CalibrationTool</span></code>  <img alt="logo" src="../_images/monocle_8.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-calibrationtool"><span class="std std-numref">Fig.27</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">calibrationtoolclient</span> <span class="pre">MANAGEMENT/CalibrationTool</span></code>  <img alt="logo" src="../_images/monocle_10.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-calibrationtool"><span class="std std-numref">Fig.27</span></a></p>
 </div></blockquote>
 </li>
 </ol>
@@ -217,7 +217,7 @@ or   <code class="docutils literal notranslate"><span class="pre">&gt;</span> <s
 observation in mm (e.g. in C-Band 3*5cm = 150mm). In the case of K-Band observations this value should be set to 60mm.</p>
 </div></blockquote>
 </li>
-<li><p>Look at the calibrationtool client to check the focus measurements. <img alt="logo" src="../_images/monocle_8.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-focus"><span class="std std-numref">Fig.28</span></a></p>
+<li><p>Look at the calibrationtool client to check the focus measurements. <img alt="logo" src="../_images/monocle_10.png" /> <a class="reference internal" href="../Figures/Check-fig/Check-fig.html#srt-focus"><span class="std std-numref">Fig.28</span></a></p>
 <blockquote>
 <div><p>The focus is correct if you see a Gaussian with an offset lower
 than a few tenth of  mm with respect to the zero.</p>

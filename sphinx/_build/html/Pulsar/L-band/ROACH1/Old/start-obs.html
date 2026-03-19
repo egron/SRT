@@ -88,46 +88,46 @@
 </div>
 <p>$ : commands to insert in a shell</p>
 <p>&gt;  : commands to insert in the operatorInput panel</p>
-<p><img alt="logo" src="../../../../_images/monocle_10.png" />: check the execution on the monitor</p>
+<p><img alt="logo" src="../../../../_images/monocle_12.png" />: check the execution on the monitor</p>
 <hr class="docutils" />
 <section id="in-the-operatorinput-panel">
 <h2>In the operatorInput panel<a class="headerlink" href="#in-the-operatorinput-panel" title="Link to this heading"></a></h2>
 <ol class="arabic">
 <li><p>Insert your project number :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code>    <img alt="logo" src="../../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">project=[projectID]</span></code>    <img alt="logo" src="../../../../_images/monocle_12.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
 </div></blockquote>
 </li>
 <li><p>Initial setup :</p>
 <blockquote>
 <div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">antennaReset</span></code></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setupLLP</span></code> <img alt="logo" src="../../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-receivers-llp"><span class="std std-numref">Fig.19</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setupLLP</span></code> <img alt="logo" src="../../../../_images/monocle_12.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-receivers-llp"><span class="std std-numref">Fig.19</span></a></p>
 </div></blockquote>
 </li>
 <li><p>Select the active surface shape (Parabolic for L and P-band observations) :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">asSetup=P</span></code>  <img alt="logo" src="../../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span class="std std-numref">Fig.4</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">asSetup=P</span></code>  <img alt="logo" src="../../../../_images/monocle_12.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-activesurface"><span class="std std-numref">Fig.4</span></a></p>
 </div></blockquote>
 </li>
 <li><p>Choose the relevant L-band filter (linear filter for 1300-1800 MHz)</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">receiversMode=XXL4</span></code> <img alt="logo" src="../../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-receivers-llp"><span class="std std-numref">Fig.19</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">receiversMode=XXL4</span></code> <img alt="logo" src="../../../../_images/monocle_12.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-receivers-llp"><span class="std std-numref">Fig.19</span></a></p>
 </div></blockquote>
 </li>
 <li><p>In a shell: insert the Local Oscillator value in MHz (this value may change) :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">setLOLP.py</span> <span class="pre">2316</span></code> <img alt="logo" src="../../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-receivers-llp"><span class="std std-numref">Fig.19</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">setLOLP.py</span> <span class="pre">2316</span></code> <img alt="logo" src="../../../../_images/monocle_12.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-receivers-llp"><span class="std std-numref">Fig.19</span></a></p>
 </div></blockquote>
 </li>
 <li><p>Set the attenuations (to zero) for the 2 polarizations arriving at the Total Power backend (this may change depending on the settings of the new IF distributor).</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=0,0</span></code> <img alt="logo" src="../../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
-<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=1,0</span></code> <img alt="logo" src="../../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=0,0</span></code> <img alt="logo" src="../../../../_images/monocle_12.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">setAttenuation=1,0</span></code> <img alt="logo" src="../../../../_images/monocle_12.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-genericbackend"><span class="std std-numref">Fig.13</span></a></p>
 </div></blockquote>
 </li>
 <li><p>Begin the schedule by indicating the start scan [N] or subscan [N_n] in the SCD file :</p>
 <blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N_n]</span></code> <img alt="logo" src="../../../../_images/monocle_10.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
+<div><p><code class="docutils literal notranslate"><span class="pre">&gt;</span> <span class="pre">startSchedule=[projectID]/[schedulename].scd,[N_n]</span></code> <img alt="logo" src="../../../../_images/monocle_12.png" /> <a class="reference internal" href="../../../../Figures/Check-fig/Check-fig.html#srt-scheduler"><span class="std std-numref">Fig.21</span></a></p>
 <blockquote>
 <div><p>If your schedule is LST-based (like for LEAP schedules), the antenna points to the relevant source as soon as you launch the schedule, even before the designated start time of observations (but you can start data acquisition with the ROACH1 at a later time). Check on the monitor each time that the antenna is pointing at and <strong>TRACKING</strong> the right source.</p>
 </div></blockquote>
