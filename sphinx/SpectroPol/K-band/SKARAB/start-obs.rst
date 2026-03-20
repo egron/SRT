@@ -50,7 +50,7 @@ $ : commands to insert in a shell
 
       :ref:`pointing-focus`
 
-#. Select and configure the SARDARA backend in K-band
+#. Select and configure the SKARAB backend in K-band
 
     ``> chooseBackend=Skarab`` |logo| :numref:`srt_scheduler`
 
@@ -59,31 +59,43 @@ $ : commands to insert in a shell
     ``> initialize=[code]``
 
      with :
+       
+       - ``[code]`` = configuration : Band - Modality - Channels
+       - ``[code]`` = SKARAB_1 : 1400 - No Stokes - 2048
+       - ``[code]`` = SKARAB_2 : 1400 - Stokes - 2048
+       - ``[code]`` = SKARAB_3 : 750 - Stokes - 8192
+       - ``[code]`` = SKARAB_4 : 640 - Stokes - 8192
+       - ``[code]`` = SKARAB_5 : 512 - Stokes - 8192
+       - ``[code]`` = SKARAB_6 : 375 - Stokes - 32768
+       - ``[code]`` = SKARAB_7 : 320 - Stokes - 32768
+       - ``[code]`` = SKARAB_8 : 256 - Stokes - 32768
+       - ``[code]`` = SKARAB_9 : 187.5 - Stokes - 32768
+       - ``[code]`` = SKARAB_10 : 187.5 - No Stokes - 65536
+       - ``[code]`` = SKARAB_11 : 160 - Stokes - 32768
+       - ``[code]`` = SKARAB_12 : 160 - No Stokes - 65536
+       - ``[code]`` = SKARAB_13 : 128 - Stokes - 32768
+       - ``[code]`` = SKARAB_14 : 128 - No Stokes - 65536
+       - ``[code]`` = SKARAB_15 : 93.75 - Stokes - 32768
+       - ``[code]`` = SKARAB_16 : 93.75 - No Stokes - 65536
+       - ``[code]`` = SKARAB_17 : 80 - Stokes - 32768
+       - ``[code]`` = SKARAB_18 : 80 - No Stokes - 65536
+       - ``[code]`` = SKARAB_19 : 64 - Stokes - 32768
+       - ``[code]`` = SKARAB_20 : 64 - No Stokes - 65536
+       - ``[code]`` = SKARAB_21 : 46.875 - Stokes - 32768
+       - ``[code]`` = SKARAB_22 : 46.875 - No Stokes - 65536
+       - ``[code]`` = SKARAB_23 : 40 - Stokes - 32768
+       - ``[code]`` = SKARAB_24 : 40 - No Stokes - 65536
+       - ``[code]`` = SKARAB_25 : 32 - Stokes - 32768
+       - ``[code]`` = SKARAB_26 : 32 - No Stokes - 65536
+       - ``[code]`` = SKARAB_27 : 23.4375 - Stokes - 32768
+       - ``[code]`` = SKARAB_28 : 23.4375 - No Stokes - 65536
+       - ``[code]`` = SKARAB_29 : 20 - Stokes - 32768
+       - ``[code]`` = SKARAB_30 : 20 - No Stokes - 65536
+       - ``[code]`` = SKARAB_31 : 16 - Stokes - 32768
+       - ``[code]`` = SKARAB_32 : 16 - No Stokes - 65536
 
-       - ``[code]`` = SK00S : central feed only and full Stokes observations ;
-       - ``[code]`` = SK00  : central feed only and total intensity observations ;
-       - ``[code]`` = SK77S : 7 feeds and full Stokes observations ;
-       - ``[code]`` = SK77  : 7 feeds and total intensity observations ;
-       - ``[code]`` = SK03S : feeds 0 and 3 only and full Stokes observations ;
-       - ``[code]`` = SK03  : feeds 0 and 3 only and total intensity observations ;
-       - ``[code]`` = SK06S : feeds 0 and 6 only and full Stokes observations ;
-       - ``[code]`` = SK06  : feeds 0 and 6 only and total intensity observations.
+    Important note: the *initialize* command takes approximately 7 minutes.
 
-    Important note: the *initialize* command requires a few more seconds comapared to the other command in order to operate.
-
-#. Set the different parameters of the backend:
-
-    ``> setSection=[sect],*,[bw],*,*,[sampleRate],[bin]`` |logo| :numref:`srt_genericBackend_KKG`
-
-     with :
-
-        - ``[sect]`` = 0, 1, 2, 3, 4, 5, 6 in full Stokes observations
-          ;
-        - ``[sect]`` = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12, 13 in
-          total intensity observations ;
-        - ``[bw]`` the bandwidth in MHz (420 or 1500) ;
-        - ``[sampleRate]`` in MHz (840 for 420 MHz of bw or 3000 for 1500 MHz of bw) ;
-        - ``[bin]`` the frequency channels (1024 or 16384).
 
 #. Choose the integration time in ms (e.g. n=10 corresponds to 100 spectra/sec)
 
